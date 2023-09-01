@@ -2,9 +2,20 @@ import { galleryItems } from './gallery-items.js';
 // Change code below this line
 console.log(galleryItems);
 
-galleryItems.forEach((image) = {
+const previewImageUrlEl = document.querySelector(".gallery__link");
+
+
+
+galleryItems.forEach((image) => {
+    const previewImageUrl = image.preview;
     
-})
+
+    const originalImageUrl = image.original;
+    const descriptionImageAlt = image.description;
+    console.log(previewImageUrl);
+    console.log(originalImageUrl);
+    console.log(descriptionImageAlt);
+  });
 
 
 
